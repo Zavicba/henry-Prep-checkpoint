@@ -201,8 +201,8 @@ function filtrar(funcion) {
   Array.prototype.filtrar = function(funcion){
 
       var array = this.map(function(elemento){
-          if(funcion(elemento)){
-          return this.elemento;
+          if(funcion(this.elemento)){
+          return elemento;
         }
       });
 
